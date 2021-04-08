@@ -10,8 +10,8 @@ API_KEY = 'Your API key'
 
 
 def get_data():
-    owm = OWM(')
-    mgr = owm.weather_manager(API_KEY)
+    owm = OWM(API_KEY)
+    mgr = owm.weather_manager()
     return mgr.one_call(lat=SPB_LATITUDE, lon=SPB_LONGITUDE)
 
 
