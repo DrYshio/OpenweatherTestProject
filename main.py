@@ -6,11 +6,12 @@ from pyowm.utils.formatting import to_date
 SPB_LATITUDE = 59.894444
 SPB_LONGITUDE = 30.264168
 DEGREE_SIGN = u'\N{DEGREE SIGN}'
+API_KEY = 'Your API key'
 
 
 def get_data():
-    owm = OWM('ad51858e01f05cf58349f151ccc6f7ed')
-    mgr = owm.weather_manager()
+    owm = OWM(')
+    mgr = owm.weather_manager(API_KEY)
     return mgr.one_call(lat=SPB_LATITUDE, lon=SPB_LONGITUDE)
 
 
